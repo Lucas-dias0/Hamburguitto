@@ -1,192 +1,154 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Sofadi+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Sofadi+One&display=swap");
 
 /*configuração da estrutura*/
 
-body{
-    background-color: #fcfcfc;
-    color: #FDFFFC;
-    width: 100vw; /*Largura do site*/
-    margin:auto; /*Margem da paginação no site*/
-   
+body {
+  background-color: #fcfcfc;
+  color: #fdfffc;
+  width: 100vw; /*Largura do site*/
+  margin: auto; /*Margem da paginação no site*/
 }
 
 /*Menu*/
 
-header{
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-around; /*Espaçamento entre eles*/ 
-    align-items: center; 
-    background-color:#2F2D2E;
-    
+header {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /*Espaçamento entre eles*/
+  align-items: center;
+  background-color: #2f2d2e;
 }
 
-#title img{
-    width: 150px;
-    height: auto;
-    cursor: pointer;
-    display: flex;
-
-    
+#title img {
+  width: 96px;
+  height: auto;
+  cursor: pointer;
+  display: flex;
 }
 
-li{
-    display: inline-block;
-    margin: 30px;
-    
+li {
+  display: inline-block;
+  margin: 30px;
 }
 
-a{
-    color: #FDFFFC;
-    font-family: "Mochiy Pop One", sans-serif;
-    font-weight: 200;
-    text-decoration:none;
-    font-size: 20px;
-    
+a {
+  color: #fdfffc;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-a:hover{ /*quando passar o mouse por cima*/
-    color: #eca400;
-    border-bottom: 1px solid #eca400;
-    transition: cubic-bezier(0.35, 0.46, 0.45, 0.94) all;
+a:hover {
+  /*quando passar o mouse por cima*/
+  color: #eca400;
+  border-bottom: 1px solid #eca400;
+  transition: cubic-bezier(0.35, 0.46, 0.45, 0.94) all;
 }
-
 
 /*Estrutura do Formulário*/
 
-form{
-
-     display: flex;
-     align-items: center;
-     flex-direction: column; 
-     margin-top: 120px; /* Para diferenciar do menu*/
-     border: 2px solid #2F2D2E;
-     background-color: #2F2D2E;
-     width: 50%;
-     margin-left: 25%;
-     border-radius: 40px; /*Borda do formulário8*/
-     height: 750px;
-     
-
-
-
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 120px; /* Para diferenciar do menu*/
+  border: 2px solid #2f2d2e;
+  background-color: #2f2d2e;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 40px; /*Borda do formulário8*/
+  height: 750px;
 }
 
-input{
-    width: 50%;
-    margin-top: 20px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-
+input {
+  width: 50%;
+  margin-top: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
 }
 
-form [type="submit"]{
-    height: 50px;
-    width: 250px;
-    text-align: center;
-    background-color: #eca400;
-    color: #fcfcfc;
-    font-weight: bold;
-
+form [type="submit"] {
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  background-color: #eca400;
+  color: #fcfcfc;
+  font-weight: bold;
 }
 
-
-
-form [type="submit"]:hover{  
-
-       cursor: pointer;
-       transform: translateY(-10px);
+form [type="submit"]:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
 }
-
 
 /*Estilização do rodape*/
 
-footer{   /*background do rodapé*/
-  background-color: #2F2D2E;
+footer {
+  /*background do rodapé*/
+  background-color: #2f2d2e;
   margin-top: 120px;
   width: 100vw;
-  display: flex; 
+  display: flex;
   justify-content: space-around; /*Espaçamento entre eles*/
   height: 300px;
-
 }
 
 /*configuração da classe das redes sociais*/
 
-#container{
-    margin-left: 20%;
-    margin-top: 50px;
-    width: 50%;
-    align-items: center;
-    justify-content: space-between;
-    
+#container {
+  margin-left: 20%;
+  margin-top: 50px;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*nome redes sociais*/
-h1{
-    margin-top: 10px;
-    font-family: "Mochiy Pop One", sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    font-style: italic;
-
-
+h1 {
+  margin-top: 10px;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  font-style: italic;
 }
 
-span{
-     font-size: 50px;
+span {
+  font-size: 50px;
 
-     padding-left: 25%;
-
+  padding-left: 25%;
 }
-
-
 
 /* DIV da esquerda do rodapé*/
-h2{
-    margin-top: 55px;
-    font-family: "Mochiy Pop One", sans-serif;
-    font-weight: 300;
-    text-align: center;
-    font-size: 40px;
-    font-style: italic;
-    
-
-
+h2 {
+  margin-top: 55px;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
 }
 
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    width: 50%;
-    text-align: center;
-    margin-left: 25%;
-
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
 }
 
-i{
-
-    font-size: 50px;
-    padding: 20px;
+i {
+  font-size: 50px;
+  padding: 20px;
 }
 
-i:hover{
-     cursor: pointer;
-     color: #eca400;
-     transform: translateY(-10px);
-
-
+i:hover {
+  cursor: pointer;
+  color: #eca400;
+  transform: translateY(-10px);
 }
-
-
-
-
-
-
-
-

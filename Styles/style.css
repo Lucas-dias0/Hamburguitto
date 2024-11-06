@@ -1,124 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Sofadi+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Sofadi+One&display=swap");
 
-/**Estrutura html**/
-
-
-body{
-    background-color: #2F2D2E;
-    color: #FDFFFC;
-    max-width: 1200px;
-    margin:auto;
-    padding: 15px;
+/** Estrutura html **/
+body {
+  background-color: #2f2d2e;
+  color: #fdfffc;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
 }
 
-/*Menu*/
-
-header{
-    font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+/* Menu */
+header {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#title img{
-    width: 150px;
-    height: auto;
-    cursor: pointer;
-    display: flex;
-
-    
+#title img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
 }
 
-li{
-    display: inline-block;
-    margin: 30px;
-    
+li {
+  display: inline-block;
+  margin: 30px;
 }
 
-a{
-    color: #FDFFFC;
-    font-family: "Mochiy Pop One", sans-serif;
-    font-weight: 200;
-    text-decoration:none;
-    font-size: 20px;
-    
+a {
+  color: #fdfffc;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-a:hover{
-    color: #eca400;
-    border-bottom: 1px solid #eca400;
-    transition: cubic-bezier(0.35, 0.46, 0.45, 0.94) all;
+a:hover {
+  color: #eca400;
+  border-bottom: 1px solid #eca400;
+  transition: cubic-bezier(0.35, 0.46, 0.45, 0.94) all;
 }
 
-
-
-/**Estruta de layout pirncipal**/
-
-main{
-
-    padding-top: 8rem;
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    width: 100%;
-    height: 650px;
-
-
+/** Estrutura de layout principal **/
+main {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the main content */
+  margin-top: 20px;
+  width: 100%;
+  height: 650px;
+  position: relative; /* Make sure this is relative for absolute children */
 }
 
-
-h2{
-    padding-top: 4rem;
-    font-size: 50px;
-    line-height: 60px;
-    font-family: "Mochiy Pop One", sans-serif;
-    font-style: italic;
-    font-weight: 200;
-    
-    
-    
+h2 {
+  padding-top: 4rem;
+  font-size: 50px;
+  line-height: 60px;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-style: italic;
+  font-weight: 200;
 }
 
-/**imagem do hamburguer**/
-
-article{
-    width: 700px;
-    transform: rotate(10deg);
-
+/** Imagem do hamburguer **/
+article {
+  scale: 1.5;
+  width: 700px;
+  transform: rotate(10deg);
 }
 
-#bnt{
-
-    display: inline-block;
-    padding: 10px 55px;
-    background: #f14a41;
-    color: #FDFFFC;
-    font-weight: 500;
-    text-decoration:none;
-    border-radius: 60px;
-    transition: 0.5s ease-in-out;
-    font-style: italic;
-    
-
+.yellowpng {
+  position: absolute;
+  top: -30%;
+  left: -30%;
+  z-index: -1;
+  width: 100%;
+  height: auto;
 }
 
-#bnt:hover{
-   transform: translateY(-10px);
-
+#bnt {
+  display: inline-block;
+  padding: 10px 55px;
+  background: #f14a41;
+  color: #fdfffc;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 60px;
+  transition: 0.5s ease-in-out;
+  font-style: italic;
 }
 
-#segundaparte{
-    
-    background: white;
-    position: center;
-    width: 100%;
-    height: 1200px;
-    display: flex;
-    color: #eca400;
-
-
-
+#bnt:hover {
+  transform: translateY(-10px);
 }
 
+#segundaparte {
+  background: white;
+  margin: auto; /* Center this section */
+  width: 100%;
+  height: 1200px;
+  display: flex;
+  color: #eca400;
+}
