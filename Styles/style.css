@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Sofadi+One&display=swap");
 
-/** Estrutura html **/
+/* Estrutura global */
 body {
   background-color: #2f2d2e;
   color: #fdfffc;
   max-width: 1200px;
   margin: auto;
   padding: 15px;
+  font-family: "Mochiy Pop One", sans-serif;
 }
 
-/* Menu */
+/* Header */
 header {
-  font-family: "Times New Roman", Times, serif;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -24,65 +23,56 @@ header {
   cursor: pointer;
 }
 
-li {
-  display: inline-block;
-  margin: 30px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-a {
+nav a {
   color: #fdfffc;
-  font-family: "Mochiy Pop One", sans-serif;
-  font-weight: 200;
   text-decoration: none;
   font-size: 20px;
 }
 
-a:hover {
+nav a:hover {
   color: #eca400;
   border-bottom: 1px solid #eca400;
-  transition: cubic-bezier(0.35, 0.46, 0.45, 0.94) all;
+  transition: all 0.3s ease-in-out;
 }
 
-/** Estrutura de layout principal **/
+/* Main Section */
 main {
+  width: 100%;
   padding-top: 8rem;
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Center the main content */
-  margin-top: 20px;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
   height: 650px;
-  position: relative; /* Make sure this is relative for absolute children */
+  position: relative;
 }
 
-h2 {
-  padding-top: 4rem;
-  font-size: 50px;
-  line-height: 60px;
-  font-family: "Mochiy Pop One", sans-serif;
+aside {
+  display: flex;
+  flex-direction: column; /* Alinha texto e botão na vertical */
+  justify-content: center; /* Centraliza os elementos verticalmente */
+  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  gap: 20px; /* Espaço entre o texto e o botão */
+  margin-top: -386px; /* Remove deslocamento para cima */
+}
+
+aside h2 {
+  font-size: 40px; /* Ajusta o tamanho do texto */
   font-style: italic;
   font-weight: 200;
+  text-align: left; /* Alinha o texto à esquerda */
+  margin: 0; /* Remove espaçamentos extras */
 }
 
-/** Imagem do hamburguer **/
-article {
-  scale: 1.5;
-  width: 700px;
-  transform: rotate(10deg);
-}
-
-.yellowpng {
-  position: absolute;
-  top: -30%;
-  left: -30%;
-  z-index: -1;
-  width: 100%;
-  height: auto;
-}
-
-#bnt {
+#btn {
   display: inline-block;
-  padding: 10px 55px;
+  padding: 15px 60px;
   background: #f14a41;
   color: #fdfffc;
   font-weight: 500;
@@ -92,15 +82,81 @@ article {
   font-style: italic;
 }
 
-#bnt:hover {
+#btn:hover {
   transform: translateY(-10px);
 }
 
-#segundaparte {
-  background: white;
-  margin: auto; /* Center this section */
-  width: 100%;
-  height: 1200px;
-  display: flex;
+.texto1 {
+  width: 300px;
+}
+
+article img {
+  scale: 1.5;
+  right: -10px;
+  position: absolute;
+  top: 166px;
+  width: 600px;
+  transform: rotate(10deg) translateY(-90px);
+  align-self: flex-end; /* Garante alinhamento ao lado direito */
+  margin-top: -300;
+}
+
+.yellow-overlay img {
+  position: absolute;
+  top: -30%;
+  right: -30%;
+  z-index: -1;
+  width: 170%;
+  height: auto;
+}
+
+#menu {
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 100px; /* Ajusta a posição para baixo */
+}
+
+#menu h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
   color: #eca400;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card .content p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card .content span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f08000;
 }
