@@ -19,11 +19,19 @@
           <li><a href="#menu">Cardápio</a></li>
           <li><a href="#">Localização</a></li>
           <li><a href="#">Contato</a></li>
+          <li id="cart-dropdown">
+            <a href="#">Carrinho</a>
+            <div id="cart">
+              <h2>Seu Carrinho</h2>
+              <ul id="cart-items"></ul>
+              <p id="cart-total">Total: R$ 0,00</p>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <!-- Main Content -->
+    <!-- Conteudo principal -->
     <main>
       <aside>
         <h2 class="texto1">A Melhor Hamburgueria</h2>
@@ -44,37 +52,61 @@
       </div>
     </main>
 
-    <!-- Menu Section -->
+    <!-- Seção do menu -->
     <section id="menu">
       <h1>Os mais pedidos!</h1>
       <div class="menu-container">
         <div class="card">
-          <img src="./Imagem/burger1.png" alt="Hambúrguer Clássico" />
+          <img src="./burger1.png" alt="Hambúrguer Clássico" />
           <div class="content">
             <h2>Hambúrguer Clássico</h2>
             <p>Delicioso hambúrguer com queijo, alface e molho especial.</p>
             <span>R$ 25,00</span>
+            <button
+              class="add-to-cart"
+              data-name="Hambúrguer Clássico"
+              data-price="25.00"
+            >
+              Adicionar ao Carrinho
+            </button>
           </div>
         </div>
 
         <div class="card">
-          <img src="./Imagem/burger2.png" alt="Hambúrguer Duplo" />
+          <img src="./burger2.png" alt="Hambúrguer Duplo" />
           <div class="content">
             <h2>Hambúrguer Duplo</h2>
             <p>Dois hambúrgueres suculentos com queijo derretido.</p>
             <span>R$ 35,00</span>
+            <button
+              class="add-to-cart"
+              data-name="Hambúrguer Duplo"
+              data-price="35.00"
+            >
+              Adicionar ao Carrinho
+            </button>
           </div>
         </div>
 
         <div class="card">
-          <img src="./Imagem/burger3.png" alt="Vegetariano" />
+          <img src="./burger3.png" alt="Vegetariano" />
           <div class="content">
             <h2>Vegetariano</h2>
             <p>Opção saudável e deliciosa com ingredientes frescos.</p>
             <span>R$ 30,00</span>
+            <button
+              class="add-to-cart"
+              data-name="Vegetariano"
+              data-price="30.00"
+            >
+              Adicionar ao Carrinho
+            </button>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- JavaScript -->
+    <script src="./script.js" defer></script>
   </body>
 </html>

@@ -41,6 +41,65 @@ nav a:hover {
   transition: all 0.3s ease-in-out;
 }
 
+/* Dropdown de Carrinho */
+#cart-dropdown {
+  position: relative;
+}
+
+#cart-dropdown > a {
+  position: relative;
+  font-size: 20px;
+}
+
+#cart-dropdown > a::after {
+  content: "🛒";
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+#cart {
+  display: none;
+  position: absolute;
+  top: 150%;
+  right: 0;
+  background-color: #fdfffc;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 300px;
+  z-index: 1000;
+}
+
+#cart h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cart-items li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+#cart-items li:last-child {
+  border-bottom: none;
+}
+
+/* Exibe o dropdown ao passar o mouse */
+#cart-dropdown:hover #cart {
+  display: block;
+}
+
 /* Main Section */
 main {
   width: 100%;
@@ -55,19 +114,19 @@ main {
 
 aside {
   display: flex;
-  flex-direction: column; /* Alinha texto e botão na vertical */
-  justify-content: center; /* Centraliza os elementos verticalmente */
-  align-items: flex-start; /* Alinha o conteúdo à esquerda */
-  gap: 20px; /* Espaço entre o texto e o botão */
-  margin-top: -386px; /* Remove deslocamento para cima */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: -386px;
 }
 
 aside h2 {
-  font-size: 40px; /* Ajusta o tamanho do texto */
+  font-size: 40px;
   font-style: italic;
   font-weight: 200;
-  text-align: left; /* Alinha o texto à esquerda */
-  margin: 0; /* Remove espaçamentos extras */
+  text-align: left;
+  margin: 0;
 }
 
 #btn {
@@ -97,8 +156,7 @@ article img {
   top: 166px;
   width: 600px;
   transform: rotate(10deg) translateY(-90px);
-  align-self: flex-end; /* Garante alinhamento ao lado direito */
-  margin-top: -300;
+  align-self: flex-end;
 }
 
 .yellow-overlay img {
@@ -113,7 +171,7 @@ article img {
 #menu {
   text-align: center;
   padding: 50px 0;
-  margin-top: 100px; /* Ajusta a posição para baixo */
+  margin-top: 100px;
 }
 
 #menu h1 {
@@ -140,7 +198,7 @@ article img {
 }
 
 .card img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -159,4 +217,23 @@ article img {
   font-size: 1.2rem;
   font-weight: bold;
   color: #f08000;
+}
+
+.add-to-cart {
+  background-color: #f08000;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #d86b00;
 }
